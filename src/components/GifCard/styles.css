@@ -1,0 +1,22 @@
+.gif-card {
+  position: relative;
+}
+
+.gif-author-info {
+  display: none;
+}
+
+.gif-author-info img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.gif-author-info p {
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+  margin-right: 4px;
+  max-width: 130px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

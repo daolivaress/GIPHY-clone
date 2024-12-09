@@ -1,0 +1,189 @@
+nav,
+.user-display,
+.options-list,
+.categories {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  gap: 1rem;
+  margin-top: 18px;
+  margin-bottom: 12px;
+  justify-content: space-between;
+}
+
+.categories {
+  list-style: none;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.categories li {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 26px;
+  position: relative; /* Necesario para el pseudo-elemento */
+  transition: padding-bottom 0.3s ease; /* Suaviza el padding */
+}
+
+.categories .reactions::after {
+  content: '';
+  background: linear-gradient(90deg, var(--giphy-blue), var(--giphy-lightblue));
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.categories .reactions::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--giphy-blue), var(--giphy-lightblue));
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: -1;
+}
+
+.categories .reactions:hover::before {
+  opacity: 1;
+}
+
+.categories .entertainment::after {
+  content: '';
+  background: linear-gradient(90deg, var(--giphy-lightblue), var(--giphy-indigo));
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.categories .entertainment::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--giphy-lightblue), var(--giphy-indigo));
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: -1;
+}
+
+.categories .entertainment:hover::before {
+  opacity: 1;
+}
+
+.categories .sports::after {
+  content: '';
+  background: linear-gradient(90deg, var(--giphy-indigo), var(--giphy-purple));
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.categories .sports::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--giphy-indigo), var(--giphy-purple));
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: -1;
+}
+
+.categories .sports:hover::before {
+  opacity: 1;
+}
+
+.categories .artists::after {
+  content: '';
+  background: linear-gradient(90deg, var(--giphy-purple), var(--giphy-pink));
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.categories .artists::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--giphy-purple), var(--giphy-pink));
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: -1;
+}
+
+.categories .artists:hover::before {
+  opacity: 1;
+}
+
+
+.user-display {
+  height: 36px;
+  background-color: var(--giphy-dark-charcoal);
+  text-align: left; 
+}
+
+.user-display img {
+  height: 100%;
+}
+
+.user-display p {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 24px;
+}
+
+.logo-container img {
+  width: 10.5rem;
+}
+
+#create-btn,
+#upload-btn {
+  height: 36px;
+  width: 80px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  font-weight:bolder;
+  justify-content: center;
+  line-height: normal;
+  text-align: center;
+  align-items: center;
+  font-size: 13px;
+  border: none;
+}
+
+#create-btn {
+  background-color: var(--giphy-purple);
+  color: var(--giphy-white);
+  margin-left: 6px;
+  margin-right: 12px;
+}
+
+#upload-btn {
+  background-color: var(--giphy-indigo);
+  color: var(--giphy-white);
+}

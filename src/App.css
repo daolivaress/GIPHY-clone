@@ -1,0 +1,61 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  align-items: center; 
+  margin-top: 20px;
+}
+
+.title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.title img {
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+
+.gifs-container {
+  column-count: 4;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+
+.gifs-container div {
+  margin-bottom: 7px;
+}
+
+.gifs-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.gifs-container img:hover ~ .gif-author-info {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  position: absolute;
+  bottom: 3px;
+  left: 6px;
+  font-size: 15px;
+}
+
+.trending-search-terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+
+
+
+

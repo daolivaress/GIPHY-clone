@@ -1,0 +1,16 @@
+.trending-search-term-badget {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-weight: 700;
+  text-wrap: nowrap;
+  gap: 8px;
+  background-image: linear-gradient(180deg, var(--giphy-darkest-grey), var(--giphy-dark-grey));
+  border-radius: 99px;
+  padding: 0 1.5rem;
+  cursor: pointer;
+}
+
+.trending-search-term-badget img {
+  width: 1.5rem;
+}

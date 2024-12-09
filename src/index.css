@@ -1,0 +1,34 @@
+:root {
+  --giphy-black: #121212;
+  --giphy-darkest-grey: #212121;
+  --giphy-dark-grey: #2e2e2e;
+  --giphy-dark-charcoal: #3e3e3e;
+  --giphy-charcoal: #4a4a4a;
+  --giphy-light-charcoal: #5c5c5c;
+  --giphy-light-grey: #a6a6a6;
+  --giphy-lightest-grey: #d8d8d8;
+  --giphy-whitesmoke: #ececec;
+  --giphy-white: #fff;
+  --giphy-blue: #0cf;
+  --giphy-green: #0f9;
+  --giphy-purple: #93f;
+  --giphy-red: #f66;
+  --giphy-yellow: #fff35c;
+  --giphy-aqua: #00e6cc;
+  --giphy-lightblue: #3191ff;
+  --giphy-indigo: #6157ff;
+  --giphy-pink: #e646b6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--giphy-black);
+  color: var(--giphy-white);
+}
