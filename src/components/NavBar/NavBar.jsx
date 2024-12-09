@@ -1,9 +1,11 @@
 import "./styles.css";
 
-const NavBar = () => {
+const NavBar = ({onNewCategory}) => {
   return (
     <nav>
-      <div className="logo-container">
+      <div className="logo-container" onClick={() => {
+        onNewCategory("");
+      }}>
         <img src="/Giphy-logo.svg" alt="giphy-logo" />
       </div>
       <ul className="categories">

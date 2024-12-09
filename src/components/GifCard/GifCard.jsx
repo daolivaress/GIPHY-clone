@@ -4,10 +4,10 @@ import "./styles.css";
 const GifCard = ({ gif }) => {
   return (
     <div key={gif.id} className="gif-card">
-      <img src={gif.url} alt={gif.title} />
+      <img src={gif.url} alt={gif.title} className="gif"/>
       {gif.authorAvatar ? (
         <div className="gif-author-info">
-          <img src={gif.authorAvatar} alt="avatar-photo" />
+          <img src={gif.authorAvatar} alt="avatar-photo" className="avathar-photo"/>
           <p>{gif.authorName.trim()}</p>
           {gif.is_verified && <MdVerified size={16} />}
         </div>

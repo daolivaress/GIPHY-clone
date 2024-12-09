@@ -1,4 +1,4 @@
-.trending-search-term-badget {
+.trending-search-term-badge {
   display: flex;
   align-items: center;
   height: 50px;
@@ -11,6 +11,6 @@
   cursor: pointer;
 }
 
-.trending-search-term-badget img {
+.trending-search-term-badge img {
   width: 1.5rem;
 }

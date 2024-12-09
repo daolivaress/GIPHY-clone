@@ -13,6 +13,10 @@ nav {
   justify-content: space-between;
 }
 
+.logo-container {
+  cursor: pointer;
+}
+
 .categories {
   list-style: none;
   gap: 0.5rem;
