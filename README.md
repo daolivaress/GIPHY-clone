@@ -39,4 +39,4 @@ A continuación se muestra una vista previa de la página principal de GIPHY-clo
 ![Vista previa de GIPHY-clone](https://i.imgur.com/j7DvCn9.png)
 
 ## Visita la Página
-https://giphy-clone.pages.dev/
+Abre tu navegador y visita: https://giphy-clone.pages.dev/
