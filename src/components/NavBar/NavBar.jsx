@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "./styles.css";
 
 const NavBar = ({onNewCategory}) => {
@@ -30,3 +31,7 @@ const NavBar = ({onNewCategory}) => {
 };
 
 export default NavBar;
+
+NavBar.propTypes = {
+  onNewCategory: PropTypes.func.isRequired,
+};

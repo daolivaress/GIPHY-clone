@@ -46,37 +46,7 @@
   font-size: 15px;
 }
 
-.trending-search-terms {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  overflow: hidden;
-  margin-top: 20px;
-  position: relative; 
-}
 
-.arrow {
-  position: fixed;
-  cursor: pointer;
-  height: 50px;
-}
-
-.arrow-back {
-  left: 450px;
-}
-
-.arrow-back:hover {
-  background-image: linear-gradient(to right, var(--giphy-black) 40%, transparent);
-}
-
-.arrow-forward {
-  right: 450px;
-}
-
-.arrow-forward:hover {
-  background-image: linear-gradient(to left, var(--giphy-black) 40%, transparent);
-}
 
 
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { CgSearch } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
+import PropTypes from "prop-types";
 import "./styles.css";
 
 const SearchBar = ({ onNewCategory }) => {
@@ -16,11 +17,12 @@ const SearchBar = ({ onNewCategory }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (inputValue.trim() === "") return;
     onNewCategory(inputValue.trim());
   };
 
   return (
-    <form className="search-input" onSubmit={handleSubmit}>
+    <form className="search-input" onSubmit={handleSubmit} aria-label="form">
       <input
         type="text"
         placeholder="Search all the GIFs"
@@ -40,3 +42,9 @@ const SearchBar = ({ onNewCategory }) => {
 };
 
 export default SearchBar;
+
+SearchBar.propTypes = {
+  onNewCategory: PropTypes.func.isRequired,
+};
+
+

@@ -8,9 +8,10 @@ nav,
 
 nav {
   gap: 1rem;
-  margin-top: 12px;
+  margin-top: 20px;
   margin-bottom: 12px;
   justify-content: space-between;
+  height: 36px;
 }
 
 .logo-container {
@@ -21,7 +22,7 @@ nav {
   list-style: none;
   gap: 0.5rem;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .categories li {
@@ -29,7 +30,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 26px;
+  padding: 9.5px 26px;
   position: relative; /* Necesario para el pseudo-elemento */
   transition: padding-bottom 0.3s ease; /* Suaviza el padding */
 }
