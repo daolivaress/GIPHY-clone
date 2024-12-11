@@ -36,7 +36,7 @@ nav {
 }
 
 .categories .reactions::after {
-  content: '';
+  content: "";
   background: linear-gradient(90deg, var(--giphy-blue), var(--giphy-lightblue));
   width: 100%;
   height: 4px;
@@ -46,15 +46,15 @@ nav {
 }
 
 .categories .reactions::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, var(--giphy-blue), var(--giphy-lightblue));
-  opacity: 0; 
-  transition: opacity 0.3s ease; 
+  opacity: 0;
+  transition: opacity 0.3s ease;
   z-index: -1;
 }
 
@@ -63,8 +63,12 @@ nav {
 }
 
 .categories .entertainment::after {
-  content: '';
-  background: linear-gradient(90deg, var(--giphy-lightblue), var(--giphy-indigo));
+  content: "";
+  background: linear-gradient(
+    90deg,
+    var(--giphy-lightblue),
+    var(--giphy-indigo)
+  );
   width: 100%;
   height: 4px;
   position: absolute;
@@ -73,15 +77,19 @@ nav {
 }
 
 .categories .entertainment::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, var(--giphy-lightblue), var(--giphy-indigo));
-  opacity: 0; 
-  transition: opacity 0.3s ease; 
+  background: linear-gradient(
+    90deg,
+    var(--giphy-lightblue),
+    var(--giphy-indigo)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
   z-index: -1;
 }
 
@@ -90,7 +98,7 @@ nav {
 }
 
 .categories .sports::after {
-  content: '';
+  content: "";
   background: linear-gradient(90deg, var(--giphy-indigo), var(--giphy-purple));
   width: 100%;
   height: 4px;
@@ -100,15 +108,15 @@ nav {
 }
 
 .categories .sports::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, var(--giphy-indigo), var(--giphy-purple));
-  opacity: 0; 
-  transition: opacity 0.3s ease; 
+  opacity: 0;
+  transition: opacity 0.3s ease;
   z-index: -1;
 }
 
@@ -117,7 +125,7 @@ nav {
 }
 
 .categories .artists::after {
-  content: '';
+  content: "";
   background: linear-gradient(90deg, var(--giphy-purple), var(--giphy-pink));
   width: 100%;
   height: 4px;
@@ -127,15 +135,15 @@ nav {
 }
 
 .categories .artists::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, var(--giphy-purple), var(--giphy-pink));
-  opacity: 0; 
-  transition: opacity 0.3s ease; 
+  opacity: 0;
+  transition: opacity 0.3s ease;
   z-index: -1;
 }
 
@@ -143,11 +151,10 @@ nav {
   opacity: 1;
 }
 
-
 .user-display {
   height: 36px;
   background-color: var(--giphy-dark-charcoal);
-  text-align: left; 
+  text-align: left;
 }
 
 .user-display img {
@@ -172,7 +179,7 @@ nav {
   box-sizing: border-box;
   cursor: pointer;
   display: flex;
-  font-weight:bolder;
+  font-weight: bolder;
   justify-content: center;
   line-height: normal;
   text-align: center;
@@ -191,4 +198,14 @@ nav {
 #upload-btn {
   background-color: var(--giphy-indigo);
   color: var(--giphy-white);
+}
+
+@media screen and (max-width: 1000px) {
+  .categories {
+    display: none;
+  }
+  .user-display p {
+    display: none;
+    margin: 0;
+  }
 }
