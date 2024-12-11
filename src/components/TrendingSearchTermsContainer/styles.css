@@ -1,17 +1,23 @@
+.trending-search-terms-container {
+  width: 1000px;
+  position: relative;
+  margin-top: 10px;
+}
+
 .trending-search-terms {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 100%;
   overflow: hidden;
-  margin-top: 10px;
-  position: relative; 
+  position: relative;
 }
 
 .arrow {
   position: absolute;
   cursor: pointer;
+  top: 0;
   height: 50px;
+  z-index: 1;
 }
 
 .arrow-back {
@@ -19,7 +25,11 @@
 }
 
 .arrow-back:hover {
-  background-image: linear-gradient(to right, var(--giphy-black) 40%, transparent);
+  background-image: linear-gradient(
+    to right,
+    var(--giphy-black) 50%,
+    transparent
+  );
 }
 
 .arrow-forward {
@@ -27,5 +37,9 @@
 }
 
 .arrow-forward:hover {
-  background-image: linear-gradient(to left, var(--giphy-black) 40%, transparent);
+  background-image: linear-gradient(
+    to left,
+    var(--giphy-black) 50%,
+    transparent
+  );
 }

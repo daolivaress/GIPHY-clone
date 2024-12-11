@@ -2,11 +2,14 @@ import { MdArrowForwardIos } from "react-icons/md";
 import { MdArrowBackIosNew } from "react-icons/md";
 import TrendingSearchTermBadge from "../TrendingSearchTermBadge/TrendingSearchTermBadge";
 import PropTypes from "prop-types";
-import './styles.css';
+import "./styles.css";
 
-const TrendingSearchTermsContainer = ({ onNewCategory, trendingSearchTerms }) => {
+const TrendingSearchTermsContainer = ({
+  onNewCategory,
+  trendingSearchTerms,
+}) => {
   return (
-    <div className="trending-search-terms">
+    <div className="trending-search-terms-container">
       <MdArrowBackIosNew
         className="arrow arrow-back"
         size={30}
@@ -16,13 +19,15 @@ const TrendingSearchTermsContainer = ({ onNewCategory, trendingSearchTerms }) =>
             .scrollBy({ left: -300, behavior: "smooth" });
         }}
       />
-      {trendingSearchTerms.map((term, index) => (
-        <TrendingSearchTermBadge
-          title={term}
-          key={index}
-          onNewCategory={onNewCategory}
-        />
-      ))}
+      <div className="trending-search-terms">
+        {trendingSearchTerms.map((term, index) => (
+          <TrendingSearchTermBadge
+            title={term}
+            key={index}
+            onNewCategory={onNewCategory}
+          />
+        ))}
+      </div>
       <MdArrowForwardIos
         className="arrow arrow-forward"
         size={30}
