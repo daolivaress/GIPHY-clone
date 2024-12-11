@@ -38,7 +38,7 @@ const App = () => {
               trendingSearchTerms={trendingSearchTerms}
             />
             <div className="title">
-              <img src="/src/assets/trending.svg" alt="trending-icon" />
+              <img src="src/assets/trending.svg" alt="trending-icon" />
               <h1>Trending Now</h1>
             </div>
           </>

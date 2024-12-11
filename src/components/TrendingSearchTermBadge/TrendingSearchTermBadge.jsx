@@ -6,7 +6,7 @@ const TrendingSearchTermBadge = ({ title, onNewCategory }) => {
     <div className="trending-search-term-badge" data-testid="trending-search-term-badge" onClick={() => {
       onNewCategory(title.trim())
     }}>
-      <img src="/src/assets/trending.svg" alt="trending-icon" />
+      <img src="src/assets/trending.svg" alt="trending-icon" />
       <p>{title}</p>
     </div>
   );
